@@ -16,7 +16,7 @@ class HomePageTemp extends StatelessWidget {
     );
   }
 
-  List<Widget> _crearItems() {
+  /* List<Widget> _crearItems() {
     List<Widget> lista = new List<Widget>();
 
     for (String opt in opciones) {
@@ -26,7 +26,7 @@ class HomePageTemp extends StatelessWidget {
       lista..add(tempWidget)..add(Divider());
     }
     return lista;
-  }
+  } */
 
   List<Widget> _crearItemsCorta() {
     return opciones.map((item) {
