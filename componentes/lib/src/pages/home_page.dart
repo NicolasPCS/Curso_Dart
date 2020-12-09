@@ -2,7 +2,7 @@ import 'package:componentes/src/providers/menu_provider.dart';
 import 'package:componentes/src/utils/icono_string_util.dart';
 import 'package:flutter/material.dart';
 
-import 'alert_page.dart';
+// import 'alert_page.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -30,6 +30,10 @@ class HomePage extends StatelessWidget {
 
   List<Widget> _listaItems(List<dynamic> data, BuildContext context) {
     final List<Widget> opciones = [];
+
+    if (data == null) {
+      return [];
+    }
 
     data.forEach((opt) {
       final widgetTemp = ListTile(
